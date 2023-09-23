@@ -1,7 +1,7 @@
 ﻿
 const TelegramApi = require('node-telegram-bot-api');
 const {keyboard, again_keyboard} = require('./option')
-const token = '';
+const token = '6475398974:AAFUWkpwnWayuIJi8QBWgTLqyz-eoDziSsg';
 const bot = new TelegramApi(token, {polling:true});
 
 const chats = {};
