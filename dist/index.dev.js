@@ -6,8 +6,9 @@ var _require = require('./option'),
     keyboard = _require.keyboard,
     again_keyboard = _require.again_keyboard;
 
-var token = '6475398974:AAFUWkpwnWayuIJi8QBWgTLqyz-eoDziSsg';
-var bot = new TelegramApi(token, {
+require('dotenv').config();
+
+var bot = new TelegramApi(process.env.BOT_TOKEN, {
   polling: true
 });
 var chats = {};
